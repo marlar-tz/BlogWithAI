@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Blog Post</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/new-blog.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="index.html" class="home-link">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="layout">
+        <main class="main-content">
+            <div class="blog-form">
+                <!-- Cover Image Section -->
+                <div class="cover-image-section">
+                    <div class="cover-image-container">
+                        <div class="cover-image-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 16L8.586 11.414C9.367 10.633 10.633 10.633 11.414 11.414L16 16M14 14L15.586 12.414C16.367 11.633 17.633 11.633 18.414 12.414L20 14M14 8H14.01M6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>Add a cover</span>
+                            <div class="info-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13 16H12V12H11M12 8H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Details Section -->
+                <div class="story-details-section">
+                    <h2 class="section-title">Blog Details</h2>
+                    <div class="orange-line"></div>
+
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" placeholder="Untitled Blog"
+                            value="Identifying the Spread of Fake News">
+                    </div>
+
+                    <!-- Tags Section -->
+                    <div class="form-group">
+                        <label for="tags">
+                            Tags
+                            <span class="info-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13 16H12V12H11M12 8H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </label>
+                        <div class="tag-input">
+                            <input type="text" id="tags" placeholder="Add a tag">
+                            <button class="add-tag-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 6V12M12 12V18M12 12H18M12 12H6" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">
+                            Description
+                            <span class="info-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13 16H12V12H11M12 8H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </label>
+                        <textarea id="description"
+                            rows="10">A new study conducted by the Indian School of Business (ISB) and Cyber Peace titled ‘Fact-Checking India: Identifying the Spread of Fake News and Policy Recommendations for Combating Misinformation’, reveals a significant rise in fake news and deepfake concerns in the country, with social media emerging as the primary vector of misinformation. The research, focusing on user behaviour and perceptions, provides crucial insights into the spread of misinformation and its impact on various segments of Indian society. </textarea>
+                        <button class="scan-plagiarism-btn">
+                            Scan for plagiarism
+                        </button>
+                        <!-- Plagiarism Results Section -->
+                        <div class="plagiarism-results">
+                            <div class="results-header">
+                                <div class="score-circle">
+                                    <span>11</span>
+                                </div>
+                                <p class="results-summary">We didn't find any plagiarism, but we found 11 writing
+                                    issues.</p>
+                            </div>
+                            <div class="results-grid">
+                                <div class="result-item">
+                                    <span class="result-label">No plagiarism found</span>
+                                    <span class="check-icon">✓</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Grammar</span>
+                                    <span class="check-icon">✓</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Spelling</span>
+                                    <span class="issue-count">2</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Punctuation</span>
+                                    <span class="issue-count">6</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Conciseness</span>
+                                    <span class="issue-count">1</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Readability</span>
+                                    <span class="check-icon">✓</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Word choice</span>
+                                    <span class="issue-count">1</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Additional issues</span>
+                                    <span class="issue-count">1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="draft-btn">
+                                Save as draft
+                            </button>
+                            <button type="submit" class="submit-btn">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
